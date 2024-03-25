@@ -1,0 +1,57 @@
+# Copyright (C) 2024 Gennaro Di Fiandra
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Post Bookmark 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/post-bookmark\n"
+"POT-Creation-Date: 2024-03-25T19:06:44+00:00\n"
+"PO-Revision-Date: 2024-03-25 20:10+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Domain: post-bookmark\n"
+
+#. Plugin Name of the plugin
+#: post-bookmark.php
+msgid "Post Bookmark"
+msgstr ""
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+#: post-bookmark.php
+msgid "#"
+msgstr ""
+
+#. Description of the plugin
+#: post-bookmark.php
+msgid "Allows the logged in users to save each post in a personal list"
+msgstr "Consente ad ogni utente loggato di salvare ciascun post in una lista personale"
+
+#. Author of the plugin
+#: post-bookmark.php
+msgid "Gennaro Di Fiandra"
+msgstr ""
+
+#: includes/templates/BookmarkedPosts.php:50
+msgid "Bookmarked Posts"
+msgstr "Post Salvati"
+
+#: includes/templates/BookmarkMe.php:17
+msgid "Bookmark Me"
+msgstr "Salva"
+
+#: views/bookmarked-posts.php:16
+msgid "This feature is available only for logged in users."
+msgstr "Questa funzinalità è disponibile solo per gli utenti loggati."
+
+#: views/bookmarked-posts.php:18
+msgid "You have not saved posts yet."
+msgstr "Non hai ancora post salvati."
+
+#: views/bookmarked-posts.php:21
+msgid "Your Bookmarked Posts"
+msgstr "I Tuoi Post Salvati"
