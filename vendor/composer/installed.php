@@ -3,7 +3,7 @@
         'name' => 'gennarodifiandra/post-bookmark',
         'pretty_version' => 'dev-production',
         'version' => 'dev-production',
-        'reference' => '07c4cdb95349bfbb67a17b06c8206aa6f79ea234',
+        'reference' => 'a612db2f91e7eea4e9719fd6bbe11d7a9ecff9f8',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'gennarodifiandra/post-bookmark' => array(
             'pretty_version' => 'dev-production',
             'version' => 'dev-production',
-            'reference' => '07c4cdb95349bfbb67a17b06c8206aa6f79ea234',
+            'reference' => 'a612db2f91e7eea4e9719fd6bbe11d7a9ecff9f8',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
