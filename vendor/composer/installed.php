@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'gennarodifiandra/post-bookmark',
-        'pretty_version' => 'dev-production',
-        'version' => 'dev-production',
-        'reference' => 'a612db2f91e7eea4e9719fd6bbe11d7a9ecff9f8',
+        'pretty_version' => 'dev-features/enhancements',
+        'version' => 'dev-features/enhancements',
+        'reference' => 'd2494ab018c52b0a108c03d13388a3c24151c101',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'gennarodifiandra/post-bookmark' => array(
-            'pretty_version' => 'dev-production',
-            'version' => 'dev-production',
-            'reference' => 'a612db2f91e7eea4e9719fd6bbe11d7a9ecff9f8',
+            'pretty_version' => 'dev-features/enhancements',
+            'version' => 'dev-features/enhancements',
+            'reference' => 'd2494ab018c52b0a108c03d13388a3c24151c101',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
