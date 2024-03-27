@@ -13,9 +13,9 @@ const BookmarkedPostsListHandler = {
   {
     event.preventDefault();
 
-    const input = BookmarkedPostsListHandler.getGlobalData(event);
-    const PostRequestData = BookmarkedPostsListHandler.preparePostRequestData(input);
-    const target = await BookmarkedPostsListHandler.doPostRequest(PostRequestData);
+    const initialData = BookmarkedPostsListHandler.getGlobalData(event);
+    const preparedData = BookmarkedPostsListHandler.preparePostRequestData(initialData);
+    const result = await BookmarkedPostsListHandler.doPostRequest(preparedData);
     BookmarkedPostsListHandler.updatePostsList(target);
   },
 
