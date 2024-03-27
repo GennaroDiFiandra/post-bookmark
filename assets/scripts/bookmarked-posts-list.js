@@ -16,7 +16,8 @@ const BookmarkedPostsListHandler = {
     const initialData = BookmarkedPostsListHandler.getGlobalData(event);
     const preparedData = BookmarkedPostsListHandler.preparePostRequestData(initialData);
     const result = await BookmarkedPostsListHandler.doPostRequest(preparedData);
-    BookmarkedPostsListHandler.updatePostsList(target);
+
+    result && BookmarkedPostsListHandler.updatePostsList(result);
   },
 
   getGlobalData: function(event)
@@ -65,9 +66,22 @@ const BookmarkedPostsListHandler = {
       body: JSON.stringify(payload),
     };
 
-    const response = await fetch(url, options);
-    if (!response.ok) throw new Error(`Status code ${response.status} - bad response from the server`);
-    return target;
+    let output;
+
+    try
+    {
+      const response = await fetch(url, options);
+      if (!response.ok) throw `Status code ${response.status} - bad response from the server`;
+      output = target;
+    }
+    catch (error)
+    {
+      console.error(error)
+      output = false;
+    }
+
+    return output;
+
   },
 
   updatePostsList: function(target)

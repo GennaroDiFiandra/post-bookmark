@@ -13,11 +13,12 @@ const BookmarkMeButtonHandler = {
   {
     event.preventDefault();
 
-    const input = BookmarkMeButtonHandler.getGlobalData(event);
-    const PostRequestData = BookmarkMeButtonHandler.preparePostRequestData(input);
-    await BookmarkMeButtonHandler.doPostRequest(PostRequestData);
-    BookmarkMeButtonHandler.hideBookmarkMeButton(event);
-    BookmarkMeButtonHandler.showBookmarkedPostsButton();
+    const initialData = BookmarkMeButtonHandler.getGlobalData(event);
+    const preparedData = BookmarkMeButtonHandler.preparePostRequestData(initialData);
+    const result = await BookmarkMeButtonHandler.doPostRequest(preparedData);
+
+    result && BookmarkMeButtonHandler.hideBookmarkMeButton(event);
+    result && BookmarkMeButtonHandler.showBookmarkedPostsButton();
   },
 
   getGlobalData: function(event)
@@ -52,8 +53,22 @@ const BookmarkMeButtonHandler = {
       body: JSON.stringify(payload),
     };
 
-    const response = await fetch(url, options);
-    if (!response.ok) throw new Error(`Status code ${response.status} - bad response from the server`);
+    let output;
+
+    try
+    {
+      const response = await fetch(url, options);
+      if (!response.ok) throw `Status code ${response.status} - bad response from the server`;
+      output = true;
+    }
+    catch (error)
+    {
+      console.error(error)
+      output = false;
+    }
+
+    return output;
+
   },
 
   hideBookmarkMeButton: function(event)
