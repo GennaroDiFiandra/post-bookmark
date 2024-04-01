@@ -1,0 +1,20 @@
+{
+  "name": "gennarodifiandra/post-bookmark",
+  "authors": [
+    {
+      "name": "Gennaro Di Fiandra",
+      "email": "gennarodifiandra@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PostBookmark\\": "includes/"
+    }
+  },
+  "require": {
+    "htmlburger/carbon-fields": "^3.6"
+  },
+  "scripts": {
+    "translator": "wp i18n make-pot . languages/post-bookmark.pot"
+  }
+}

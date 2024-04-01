@@ -1,0 +1,5 @@
+# ignore OS files
+.DS_Store
+
+# ignore npm node_modules
+node_modules/
