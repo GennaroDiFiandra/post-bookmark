@@ -23,5 +23,6 @@ class PluginStatus
   static public function on_deactivation()
   {
     flush_rewrite_rules();
+    \delete_option('post_bookmark_are_rewrite_rules_flushed');
   }
 }
