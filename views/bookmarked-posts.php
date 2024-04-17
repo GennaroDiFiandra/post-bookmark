@@ -1,7 +1,7 @@
 <?php defined('WPINC') || die; ?>
 
 <?php
-  use PostBookmark\Data_Generator\BookmarkedPosts;
+  use PostBookmark\DataGenerator\BookmarkedPosts;
   $user_id = get_current_user_id();
   $bookmarked_posts = new BookmarkedPosts($user_id);
 ?>
