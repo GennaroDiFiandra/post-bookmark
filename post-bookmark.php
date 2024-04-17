@@ -15,6 +15,7 @@
   License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
+define('POST_BOOKMARK_VERSION', '1.0.0');
 define('POST_BOOKMARK_PATH', plugin_dir_path(__FILE__));
 define('POST_BOOKMARK_URL', plugin_dir_url(__FILE__));
 
