@@ -1,6 +1,6 @@
 <?php
 
-namespace PostBookmark\Data_Generator;
+namespace PostBookmark\DataGenerator;
 
 defined('WPINC') || die;
 
@@ -25,6 +25,6 @@ class BookmarkedPosts
 
   public function posts()
   {
-    return ($this->posts_ids()) ? get_posts([ 'include' => $this->posts_ids(), 'post_type' => 'event' ]) : null;
+    return ($this->posts_ids()) ? get_posts([ 'include' => $this->posts_ids(), 'post_type' => 'post' ]) : null;
   }
 }
