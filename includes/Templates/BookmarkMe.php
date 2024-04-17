@@ -9,7 +9,7 @@ class BookmarkMe
   public function print_button($content)
   {
     if (!is_user_logged_in()) return $content;
-    if (!is_singular('event')) return $content;
+    if (!is_singular('post')) return $content;
     if ($this->is_post_already_bookmarked()) return $content;
 
     $user_id = get_current_user_id();

@@ -17,7 +17,7 @@ class Script
     $this->unique_identifier = $unique_identifier;
     $this->src = $src;
     $this->deps = $deps;
-    $this->version = wp_get_theme()->get('Version');
+    $this->version = POST_BOOKMARK_VERSION;
     $this->in_footer = $in_footer;
   }
 

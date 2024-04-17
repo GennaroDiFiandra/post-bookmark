@@ -4,6 +4,8 @@
   use PostBookmark\DataGenerator\BookmarkedPosts;
   $user_id = get_current_user_id();
   $bookmarked_posts = new BookmarkedPosts($user_id);
+  $v=get_user_meta(get_current_user_id(), 'bookmarks', true);
+  var_dump($v);
 ?>
 
 <?php get_header(); ?>
